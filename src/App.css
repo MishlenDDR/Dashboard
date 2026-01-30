@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.appBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 400px;
+}
+.phoneCard {
+  height: 651px;
+  width: 410px;
+  position: relative;
+  left: 380px;
+  z-index: 2;
+}
+.backGround {
+  height: 600px;
+  width: 350px;
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  border-radius: 25px;
+}
+.header {
+  position: relative;
+  display: grid;
+  grid-template-areas: "stack";
+}
+.CityNameNow {
+  position: absolute;
+  z-index: 2;
+  margin: 15px 0 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  
+}
+.ImageOfWeather {
+  width: 350px;
+  height: 210px;
+  border-radius: 30px 30px 0px 0px;
+  border: none;
+  grid-area: stack;
+  z-index: 1;
+  filter: blur(1.5px);
+  box-shadow:
+    0px 7px 3px rgb(20, 19, 53);
+
+}
+.WeatherIndicatorBox {
+  grid-area: stack;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.DegreesAndIcon {
+  display: flex;
+  flex-direction: row;
+}
+.IconOfPartlyCloudy {
+  grid-area: stack;
+  z-index: 2;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+}
+.DegreesOfCelsius {
+  grid-area: stack;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 4px 0 0 5px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.DegreesOfCelsius span {
+  font-size: 2.5rem;
+}
+.Hours {
+  width: 330px;
+  height: 45px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1.1rem;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  
+}
+.Hour1, .Hour2, .Hour3, .Hour4 {
+  margin: 0px 0 0 10px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 20px;
+  padding-bottom: 20px;
+}
+.MonIcon {
+  width: 30px;
+  height: 30px;
+  margin: 25px 0 0 24px;
+  z-index: 2;
+}
+.otherDayWeatherBox {
+  width: 328px;
+  height: 311px;
+  position: relative;
+  border: 2px solid;
+  border-radius: 30px 30px 0 0;
+  margin: 3px 0 0 11px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding-top: 1px;
+  z-index: 1;
+}
+.Day1, .Day2, .Day3, .Day4 {
+  width: 308px;
+  height: 55px;
+  border-radius: 18px;
+  margin: 17px 0 0 9px;
+  border: 1px solid rgba(186, 233, 255, 0.3);
+}
+.DayBoxInsaid {
+  display: flex;
+  align-items: center;
+  margin: 8px 0px 0 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 13px;
+  gap: 3px;
+  white-space: nowrap;
+}
+.WeekDay {
+  width: 40px;
+  margin-left: 7px;
+  display: flex;
+  justify-content: right;
+}
+.MonIconOfDay {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0px;
+}
+.DayInfo {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5px;
+}
+.DayTemp {
+  width: 40px;
+  justify-content: right;
+}
+.DayBoxInsaid span {
+  display: inline-block;
+  width: 5px;       
+  text-align: right; 
+}
+.DayBoxInsaid::first-letter {
+  display: inline-block;
+  width: 30px; 
+}
+.BottomDisplay {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(5px);
+  position: relative;
+  width: 345px;
+  margin: 0 0 0 3px;
+  height: 60px;
+  border-radius: 0 0 40px 40px;
+  border: 1px solid rgba(186, 233, 255, 0.3);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+.RefreshButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 3px 0 0 0px;
+  z-index: 999;
+}
+.RefreshButton:active{
+  transform: scale(0.95);
+}
+.RefreshButton:hover {
+  box-shadow: 0 0 25px rgba(143, 163, 167, 0.5);
+  filter: brightness(1.1);
+}
+.Ti, .Lu {
+  width: 25px;
+  height: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.Input {
+  position: relative;
+  width: 170px;
+  height: 30px;
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-right: 4px;
+  color: rgba(186, 233, 255, 0.5);
+}
+.Input::placeholder {
+  color: rgba(186, 233, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
