@@ -1,0 +1,52 @@
+.BottomDisplay {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(5px);
+  position: relative;
+  width: 345px;
+  margin: 0 0 0 3px;
+  height: 60px;
+  border-radius: 0 0 40px 40px;
+  border: 1px solid rgba(186, 233, 255, 0.3);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+.RefreshButton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 3px 0 0 0px;
+  z-index: 999;
+}
+.RefreshButton:active{
+  transform: scale(0.95);
+}
+.RefreshButton:hover {
+  box-shadow: 0 0 25px rgba(143, 163, 167, 0.5);
+  filter: brightness(1.1);
+}
+.Ti, .Lu {
+  width: 25px;
+  height: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.Input {
+  position: relative;
+  width: 170px;
+  height: 30px;
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-right: 4px;
+  color: rgba(186, 233, 255, 0.5);
+}
+.Input::placeholder {
+  color: rgba(186, 233, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}

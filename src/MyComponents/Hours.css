@@ -1,0 +1,31 @@
+.Hours {
+  width: 330px;
+  height: 45px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1.1rem;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  
+}
+.Hour1, .Hour2, .Hour3, .Hour4 {
+  margin: 0px 0 0 10px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 20px;
+  padding-bottom: 20px;
+}
+.MonIcon {
+  width: 30px;
+  height: 30px;
+  margin: 25px 0 0 24px;
+  z-index: 2;
+}
