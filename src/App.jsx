@@ -59,7 +59,7 @@ function App() {
     <>
       <div className="appBox">
         <div className="phone">
-          <img className="phoneCard" src="/phone.png" alt="" />
+          <img className="phoneCard" src="./phone.png" alt="" />
         </div>
         <div className="backGround">
           <div className="weatherBox">
